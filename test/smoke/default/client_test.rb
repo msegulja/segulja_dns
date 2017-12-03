@@ -10,5 +10,5 @@ describe file('/etc/resolv.conf') do
   its('owner') { should eq 'root' }
   its('group') { should eq 'root' }
   its('mode') { should cmp '0644' }
-  its('content') { should match(/172.16.20.126/) }
+  its('content') { should match(/172.16.20.6/) }
 end
