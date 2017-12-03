@@ -1,14 +1,16 @@
 $TTL			38400
 @			IN	SOA	balrog.segulja.com.	admin.segulja.com. (
-			1			; serial number
-			10800		; refresh
-			3600			; retry
-			38400		; expire
+			2						; serial number
+			10800				; refresh
+			3600				; retry
+			38400				; expire
 			604800 )		; negative cache TTL
 
 ; name servers - NS records
-		IN	NS	balrog.
+					IN	NS	balrog.
 
-; name servers - A records
+; A records
 balrog		IN	A		172.16.20.6
-balrog-a	IN	A		172.16.20.126
+
+lab00			IN	A		172.16.20.80
+lab01			IN	A		172.16.20.81
