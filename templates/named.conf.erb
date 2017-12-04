@@ -68,3 +68,9 @@ zone "20.16.172.in-addr.arpa" {
   type master;
   file "/etc/named/zones/db.172.16.20";
 };
+
+zone "ctssys.com" {
+  type forward;
+  forward only;
+  forwarders { 10.2.0.29; };
+};
