@@ -7,28 +7,38 @@ $TTL			38400
 			604800 )		; negative cache TTL
 
 ; name servers - NS records
-						IN	NS	gollum.
+							IN	NS		gollum.
 
 ; A records
-hobbiton0		IN	A		172.16.20.1
-took				IN	A		172.16.20.2
+hobbiton0			IN	A			172.16.20.1
+took					IN	A			172.16.20.2
 
-baggins			IN	A		172.16.20.4
-lorien			IN	A		172.16.20.5
-gollum			IN	A		172.16.20.6
-spacewalk		IN	A		172.16.20.7
+baggins				IN	A			172.16.20.4
+lorien				IN	A			172.16.20.5
+gollum				IN	A			172.16.20.6
+spacewalk			IN	A			172.16.20.7
 
-frodo				IN	A		172.16.20.10
+frodo					IN	A			172.16.20.10
 
-theshire0		IN	A		172.16.20.12
-theshire1		IN	A		172.16.20.13
+theshire0			IN	A			172.16.20.12
+theshire1			IN	A			172.16.20.13
 
-lab00				IN	A		172.16.20.80
-lab01				IN	A		172.16.20.81
+househa				IN	A			172.16.20.41
+
+music-mbath		IN	A			172.16.20.69
+
+music-office	IN	A			172.16.20.77
+
+lab00					IN	A			172.16.20.80
+lab01					IN	A			172.16.20.81
+lab02					IN	A			172.16.20.82
+lab03					IN	A			172.16.20.83
+
+firewall			IN	A			172.16.20.254
 
 ; CNAME records
-chef				IN	CNAME		gollum
-server			IN	CNAME		theshire0
-musicserver	IN	CNAME		baggins
-mediaserver	IN	CNAME		baggins
-ansible			IN	CNAME		frodo
+chef					IN	CNAME		gollum
+server				IN	CNAME		theshire0
+musicserver		IN	CNAME		baggins
+mediaserver		IN	CNAME		baggins
+ansible				IN	CNAME		frodo
