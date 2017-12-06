@@ -74,3 +74,8 @@ zone "ctssys.com" {
   forward only;
   forwarders { 10.2.0.29; };
 };
+
+zone "duckdns.org" {
+  type master;
+  file "/etc/named/zones/duckdns.org.hosts";
+};

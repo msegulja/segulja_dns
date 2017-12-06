@@ -29,6 +29,15 @@ template '/etc/named/zones/db.segulja.com' do
   notifies :restart, 'service[named]', :immediately
 end
 
+template '/etc/named/zones/duckdns.org.hosts' do
+  source    'ducksdns.org.hosts.erb'
+  owner     'root'
+  group     'named'
+  mode      '0640'
+  action    :create
+  notifies  :restart, 'service[named]', :immediately
+end
+
 template '/etc/named/zones/db.172.16.20' do
   source   'db.172.16.20.erb'
   owner    'root'
