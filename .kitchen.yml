@@ -16,9 +16,16 @@ platforms:
   - name: centos-7
 
 suites:
-  - name: default
+  - name: dnsclient
     run_list:
-      - recipe[segulja_dns::default]
+      - recipe[segulja_dns::client]
+    verifier:
+      inspec_tests:
+        - test/smoke/default
+    attributes:
+  - name: dnsserver
+    run_list:
+      - recipe[segulja_dns::server]
     verifier:
       inspec_tests:
         - test/smoke/default
