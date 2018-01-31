@@ -21,11 +21,12 @@ suites:
       - recipe[segulja_dns::client]
     verifier:
       inspec_tests:
-        - test/smoke/default
+        - test/smoke/default/client_test.rb
     attributes:
   - name: dnsserver
     run_list:
       - recipe[segulja_dns::server]
+      - recipe[segulja_dns::client]
     verifier:
       inspec_tests:
         - test/smoke/default
